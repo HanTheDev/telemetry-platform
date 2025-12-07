@@ -1,3 +1,30 @@
-# Maven
+# Java/Maven
 target/
 *.class
+*.jar
+*.war
+!.mvn/wrapper/maven-wrapper.jar
+
+# .NET
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.user
+*.suo
+*.cache
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.log

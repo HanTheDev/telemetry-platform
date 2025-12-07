@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  ingestion:
+    build:
+      context: ./ingestion-service
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8081/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - telemetry-net
+
+  analytics:
+    build:
+      context: ./analytics-service
+      dockerfile: Dockerfile
+    ports:
+      - "5272:5272"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Docker
+      - TelemetryService__BaseUrl=http://ingestion:8081
+    depends_on:
+      ingestion:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5272/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - telemetry-net
+
+networks:
+  telemetry-net:
+    driver: bridge

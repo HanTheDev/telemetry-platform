@@ -1,0 +1,10 @@
+C:\ILHAN\Coding\Project\telemetry-platform\analytics-service\obj\Debug\net8.0\AnalyticsService.csproj.AssemblyReference.cache
+C:\ILHAN\Coding\Project\telemetry-platform\analytics-service\obj\Debug\net8.0\AnalyticsService.GeneratedMSBuildEditorConfig.editorconfig
+C:\ILHAN\Coding\Project\telemetry-platform\analytics-service\obj\Debug\net8.0\AnalyticsService.AssemblyInfoInputs.cache
+C:\ILHAN\Coding\Project\telemetry-platform\analytics-service\obj\Debug\net8.0\AnalyticsService.AssemblyInfo.cs
+C:\ILHAN\Coding\Project\telemetry-platform\analytics-service\obj\Debug\net8.0\AnalyticsService.csproj.CoreCompileInputs.cache
+C:\ILHAN\Coding\Project\telemetry-platform\analytics-service\obj\Debug\net8.0\AnalyticsService.MvcApplicationPartsAssemblyInfo.cs
+C:\ILHAN\Coding\Project\telemetry-platform\analytics-service\obj\Debug\net8.0\AnalyticsService.MvcApplicationPartsAssemblyInfo.cache
+C:\ILHAN\Coding\Project\telemetry-platform\analytics-service\obj\Debug\net8.0\AnalyticsService.RazorAssemblyInfo.cache
+C:\ILHAN\Coding\Project\telemetry-platform\analytics-service\obj\Debug\net8.0\AnalyticsService.RazorAssemblyInfo.cs
+C:\ILHAN\Coding\Project\telemetry-platform\analytics-service\obj\Debug\net8.0\AnalyticsService.sourcelink.json

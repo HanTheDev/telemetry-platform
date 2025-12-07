@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HIp1y8XJJPjW+aCFovHSQc8X5qV33CDAmMpzVDnhNCREYPzYha+bWbM+Iwr4sj6CFk4awmQeY4BUcb3KvAZGsw==",
+  "dgSpecHash": "X9uc2q90IjNTpUCsW53+9vB5g3bbE1a2xvwFLEwa1oyZGeRF+zYULaUemPKb8iq33zRmIDgu9Js7zDvR7xzXAw==",
   "success": true,
-  "projectFilePath": "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\analytics-service\\AnalyticsService.Tests\\AnalyticsService.Tests.csproj",
+  "projectFilePath": "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\AnalyticsService.Tests\\AnalyticsService.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iam10\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\iam10\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",

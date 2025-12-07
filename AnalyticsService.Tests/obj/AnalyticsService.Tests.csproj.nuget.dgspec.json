@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\analytics-service\\AnalyticsService.Tests\\AnalyticsService.Tests.csproj": {}
+    "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\AnalyticsService.Tests\\AnalyticsService.Tests.csproj": {}
   },
   "projects": {
     "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\analytics-service\\AnalyticsService.csproj": {
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\analytics-service\\AnalyticsService.Tests\\AnalyticsService.Tests.csproj": {
+    "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\AnalyticsService.Tests\\AnalyticsService.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\analytics-service\\AnalyticsService.Tests\\AnalyticsService.Tests.csproj",
+        "projectUniqueName": "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\AnalyticsService.Tests\\AnalyticsService.Tests.csproj",
         "projectName": "AnalyticsService.Tests",
-        "projectPath": "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\analytics-service\\AnalyticsService.Tests\\AnalyticsService.Tests.csproj",
+        "projectPath": "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\AnalyticsService.Tests\\AnalyticsService.Tests.csproj",
         "packagesPath": "C:\\Users\\iam10\\.nuget\\packages\\",
-        "outputPath": "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\analytics-service\\AnalyticsService.Tests\\obj\\",
+        "outputPath": "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\AnalyticsService.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\iam10\\AppData\\Roaming\\NuGet\\NuGet.Config"

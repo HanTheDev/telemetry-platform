@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\analytics-service\\AnalyticsService\\AnalyticsService.csproj": {}
+    "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\analytics-service\\AnalyticsService.csproj": {}
   },
   "projects": {
-    "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\analytics-service\\AnalyticsService\\AnalyticsService.csproj": {
+    "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\analytics-service\\AnalyticsService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\analytics-service\\AnalyticsService\\AnalyticsService.csproj",
+        "projectUniqueName": "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\analytics-service\\AnalyticsService.csproj",
         "projectName": "AnalyticsService",
-        "projectPath": "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\analytics-service\\AnalyticsService\\AnalyticsService.csproj",
+        "projectPath": "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\analytics-service\\AnalyticsService.csproj",
         "packagesPath": "C:\\Users\\iam10\\.nuget\\packages\\",
-        "outputPath": "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\analytics-service\\AnalyticsService\\obj\\",
+        "outputPath": "C:\\ILHAN\\Coding\\Project\\telemetry-platform\\analytics-service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\iam10\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -66,16 +66,16 @@ cd analytics-service && dotnet test
 docker-compose up -d
 
 # POST sample data
-curl -X POST http://localhost:8080/api/telemetry \
+curl -X POST http://localhost:8081/api/telemetry \
   -H "Content-Type: application/json" \
   -d '{"equipmentId":"CNC-001","timestamp":"2024-12-06T14:30:00Z","temperature":75.5,"vibration":0.18,"pressure":102.3}'
 
 # Get analytics
-curl http://localhost:5000/api/analytics/CNC-001
+curl http://localhost:5272/api/analytics/CNC-001
 
 # Check health
-curl http://localhost:8080/actuator/health
-curl http://localhost:5000/health
+curl http://localhost:8081/actuator/health
+curl http://localhost:5272/health
 ```
 
 ## Future Enhancements

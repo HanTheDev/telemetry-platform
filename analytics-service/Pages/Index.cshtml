@@ -1,0 +1,67 @@
+@page
+@model AnalyticsService.Pages.IndexModel
+@{
+    ViewData["Title"] = "Equipment Telemetry Dashboard";
+}
+
+<div class="container mt-4">
+    <h1>Manufacturing Equipment Telemetry</h1>
+    
+    <div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title">Check Equipment Analytics</h5>
+            <form method="post" class="row g-3">
+                <div class="col-auto">
+                    <input type="text" class="form-control" name="equipmentId" 
+                           placeholder="Equipment ID (e.g., CNC-001)" required>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary">Get Analytics</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @if (Model.Analytics != null)
+    {
+        <div class="card mt-4">
+            <div class="card-header bg-success text-white">
+                <h5>Analytics for @Model.Analytics.EquipmentId</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>Total Readings:</strong> @Model.Analytics.ReadingCount</p>
+                        <p><strong>Avg Temperature:</strong> @Model.Analytics.AverageTemperature.ToString("F2")°C</p>
+                        <p><strong>Min Temperature:</strong> @Model.Analytics.MinTemperature.ToString("F2")°C</p>
+                        <p><strong>Max Temperature:</strong> @Model.Analytics.MaxTemperature.ToString("F2")°C</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>Avg Vibration:</strong> @Model.Analytics.AverageVibration.ToString("F3")</p>
+                        <p><strong>Max Vibration:</strong> @Model.Analytics.MaxVibration.ToString("F3")</p>
+                        <p><strong>Avg Pressure:</strong> @Model.Analytics.AveragePressure.ToString("F2") PSI</p>
+                    </div>
+                </div>
+                
+                @if (Model.Analytics.LastReading != null)
+                {
+                    <hr />
+                    <h6>Latest Reading:</h6>
+                    <p class="mb-0">
+                        <strong>Time:</strong> @Model.Analytics.LastReading.Timestamp.ToString("yyyy-MM-dd HH:mm:ss") | 
+                        <strong>Temp:</strong> @Model.Analytics.LastReading.Temperature°C | 
+                        <strong>Vib:</strong> @Model.Analytics.LastReading.Vibration | 
+                        <strong>Press:</strong> @Model.Analytics.LastReading.Pressure PSI
+                    </p>
+                }
+            </div>
+        </div>
+    }
+    
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div class="alert alert-danger mt-4" role="alert">
+            @Model.ErrorMessage
+        </div>
+    }
+</div>

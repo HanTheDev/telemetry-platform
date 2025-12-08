@@ -40,8 +40,8 @@ jobs:
     
     - name: Build Docker images
       run: |
-        docker-compose build
+        docker compose build
     
-    - name: Verify docker-compose
+    - name: Verify docker-compose config
       run: |
-        docker-compose config
+        docker compose config

@@ -26,12 +26,25 @@ public class TelemetryClient : ITelemetryClient
         try
         {
             var response = await _httpClient.GetAsync($"/api/telemetry/{equipmentId}");
+            
+            // If 404, return empty list (not an error)
+            if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+            {
+                _logger.LogInformation("No data found for equipment: {EquipmentId}", equipmentId);
+                return new List<TelemetryReading>();
+            }
+            
             response.EnsureSuccessStatusCode();
 
             var content = await response.Content.ReadAsStringAsync();
             var readings = JsonSerializer.Deserialize<List<TelemetryReading>>(content, _jsonOptions);
 
             return readings ?? new List<TelemetryReading>();
+        }
+        catch (HttpRequestException ex)
+        {
+            _logger.LogError(ex, "Error connecting to ingestion service");
+            throw; // This will trigger 503 in controller
         }
         catch (Exception ex)
         {
